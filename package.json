@@ -4,7 +4,8 @@
   "description": "Social Network API Homework",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
