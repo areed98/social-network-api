@@ -117,6 +117,14 @@ const userController = {
           })
           .catch(err => res.staus(400).json(err));
     },
+
+    //Delete ALL users
+    deleteAllUsers(req, res) {
+        User.deleteMany({})
+        .then(dbUserData => res.json(dbUserData))
+        .catch(err => res.status(400).json(err));
+    },
+    
 };
 
 //Export controller
